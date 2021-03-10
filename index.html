@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Game</title>
+</head>
+<body>
+    <h1>Do You Love Me?</h1>
+    <button onclick="doYes()" id="yes">YES</button>
+    <button id="no" onmouseover="doNo()" style="position: absolute;top: 0; left: 0;">NO</button>
+
+
+
+
+    <script>
+        function doYes(){
+            alert('<3');
+        }
+        let a = document.getElementById('no');
+        function doNo(){
+            
+            a.style.top = parseInt(a.style.top) + Math.random()*100 + 'px'
+            a.style.left = parseInt(a.style.left) + Math.random()*100 + 'px';
+        }
+    </script>
+</body>
+</html>
